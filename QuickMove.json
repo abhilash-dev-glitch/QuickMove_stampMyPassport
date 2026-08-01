@@ -1,0 +1,1210 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "documentId": {
+          "__rl": true,
+          "value": "1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI",
+          "mode": "list",
+          "cachedResultName": "Customer",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 2065830161,
+          "mode": "list",
+          "cachedResultName": "Form Responses 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI/edit#gid=2065830161"
+        },
+        "event": "rowAdded",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "3545eec0-0bd2-4c0e-ab4e-8a1a7ca057d8",
+      "name": "Google Sheets Trigger",
+      "credentials": {
+        "googleSheetsTriggerOAuth2Api": {
+          "id": "h4xLxMNRL2HfKkGZ",
+          "name": "Google Sheets Trigger account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI",
+          "mode": "list",
+          "cachedResultName": "Customer",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 2065830161,
+          "mode": "list",
+          "cachedResultName": "Form Responses 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI/edit#gid=2065830161"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "Timestamp"
+          ],
+          "schema": [
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Customer name",
+              "displayName": "Customer name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Phone number",
+              "displayName": "Phone number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Current city",
+              "displayName": "Current city",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Destination City",
+              "displayName": "Destination City",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Move date",
+              "displayName": "Move date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Family size",
+              "displayName": "Family size",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Property type",
+              "displayName": "Property type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Budget",
+              "displayName": "Budget",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Prefered area",
+              "displayName": "Prefered area",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need packers?",
+              "displayName": "Need packers?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need electricity?",
+              "displayName": "Need electricity?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need internet?",
+              "displayName": "Need internet?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need gas?",
+              "displayName": "Need gas?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Additional Note",
+              "displayName": "Additional Note",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Destination city",
+              "displayName": "Destination city",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Preferred area",
+              "displayName": "Preferred area",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Additional notes",
+              "displayName": "Additional notes",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Case ID",
+              "displayName": "Case ID",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Created",
+              "displayName": "Created",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Created at",
+              "displayName": "Created at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        384,
+        16
+      ],
+      "id": "d9bbb37b-9eac-4c89-875c-718cc02c45da",
+      "name": "Update row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Bfvk6izX4p60TVAW",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "1861e080-12d7-436a-92cf-720426681702",
+              "name": "Customer name",
+              "value": "={{$json[\"Customer name\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "3cb4405d-ba5e-4911-8544-f683f13b183b",
+              "name": "Email",
+              "value": "={{$json[\"Email\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "867d7fca-6d8e-42c2-a62e-d1e394893aed",
+              "name": "Phone number",
+              "value": "={{ $json[\"Phone number\"] }}",
+              "type": "number"
+            },
+            {
+              "id": "6e4c5228-296b-4cd9-92ae-61b9e045c185",
+              "name": "Current city",
+              "value": "={{$json[\"Current city\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "8b27c23c-60f8-44b8-a938-a1eb400e49e6",
+              "name": "Destination city",
+              "value": "={{$json[\"Destination city\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "9d61053d-7c8b-45d8-b1d1-e29f9f3ed4b3",
+              "name": "Move date",
+              "value": "={{$json[\"Move date\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "b9cf359f-3754-420f-86db-75902a8afcc8",
+              "name": "Family size",
+              "value": "={{$json[\"Family size\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "98a88a92-2db4-47d8-969d-f8af06517df6",
+              "name": "Property type",
+              "value": "={{$json[\"Property type\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "4e7cc09c-82a1-438c-8bfa-aa17763416b1",
+              "name": "Budget",
+              "value": "={{$json[\"Budget\"]}}",
+              "type": "number"
+            },
+            {
+              "id": "3b1c18f2-be3f-4172-a96f-1786d3cce043",
+              "name": "Preferred area",
+              "value": "={{$json[\"Preferred area\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "588e3a33-a663-49bf-abe2-49c8964b93a4",
+              "name": "Need packers?",
+              "value": "={{$json[\"Need packers?\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "87d6b771-c542-4623-8aec-07f3b0979ec2",
+              "name": "Need electricity?",
+              "value": "={{$json[\"Need electricity?\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "ff5cce36-5da6-4ed5-b917-7b37bf8dcf9a",
+              "name": "Need internet?",
+              "value": "={{$json[\"Need internet?\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "cc663ab6-1915-473d-9814-858712d130bc",
+              "name": "Need gas?",
+              "value": "={{$json[\"Need gas?\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "dcbea536-4c93-4810-af82-089f8ab95ad8",
+              "name": "Additional notes",
+              "value": "={{$json[\"Additional notes\"]}}",
+              "type": "string"
+            },
+            {
+              "id": "b616bb35-c8be-4783-8c83-8589dea9299d",
+              "name": "Case ID",
+              "value": "=QM-{{$now.format(\"yyyyMMddHHmmss\")}}",
+              "type": "string"
+            },
+            {
+              "id": "475b241c-7fd2-404c-8c92-bed68e932a05",
+              "name": "Status",
+              "value": "New",
+              "type": "string"
+            },
+            {
+              "id": "9b05906c-e037-4a38-8f76-45524336e0d5",
+              "name": "Created",
+              "value": "AI",
+              "type": "string"
+            },
+            {
+              "id": "ef211717-cfcc-4e55-a80f-914cc42aa81b",
+              "name": "Created at",
+              "value": "={{$now}}",
+              "type": "string"
+            },
+            {
+              "id": "97504fd8-86bd-445e-b3b6-a915861db8a5",
+              "name": "Timestamp",
+              "value": "={{$json[\"Timestamp\"]}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        176,
+        0
+      ],
+      "id": "f9390648-7378-4ac3-a990-04122bf95fa4",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:11434/api/generate",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"phi:latest\",\n  \"prompt\": \"You are an AI Operations Assistant for QuickMove.\\n\\nAnalyze this relocation request and return ONLY valid JSON.\\n\\nCustomer Name: {{$json.customerName}}\\nEmail: {{$json.email}}\\nPhone: {{$json.phone}}\\nCurrent City: {{$json.currentCity}}\\nDestination City: {{$json.destinationCity}}\\nMove Date: {{$json.moveDate}}\\nProperty Type: {{$json.propertyType}}\\nBudget: {{$json.budget}}\\nPreferred Area: {{$json.preferredArea}}\\nNeed Packers: {{$json.needPackers}}\\nNeed Electricity: {{$json.needElectricity}}\\nNeed Internet: {{$json.needInternet}}\\nNeed Gas: {{$json.needGas}}\\nAdditional Notes: {{$json.additionalNotes}}\\n\\nReturn JSON with:\\ncustomerName, priority, services, missingInformation, nextAction, summary, confidence\",\n  \"stream\": false,\n  \"format\": \"json\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        624,
+        0
+      ],
+      "id": "db148820-938f-441f-83a2-bf2e2621d065",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "jsCode": "const ai = JSON.parse($json.response);\n\nreturn [\n  {\n    json: ai\n  }\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        832,
+        0
+      ],
+      "id": "b983f184-dbfa-47b3-bfbd-4834cef6b41d",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Original Google Form submission\nconst original = $('Google Sheets Trigger').first().json;\n\n// AI output from Code 1\nconst ai = $input.first().json;\n\nreturn [\n  {\n    json: {\n      ...original,\n      ...ai\n    }\n  }\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        0
+      ],
+      "id": "95c329f0-8202-400d-a352-bf692069550f",
+      "name": "Code in JavaScript1"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "c2a6a49a-f61f-4755-baf3-5cc88fa997ca",
+              "leftValue": "={{$json.priority}}",
+              "rightValue": 4,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        1248,
+        0
+      ],
+      "id": "036bb38d-7cf6-49fb-970d-c9e94a98ce4f",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI",
+          "mode": "list",
+          "cachedResultName": "Customer",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 2065830161,
+          "mode": "list",
+          "cachedResultName": "Form Responses 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI/edit#gid=2065830161"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Timestamp": "={{$node[\"Google Sheets Trigger\"].json[\"Timestamp\"]}}",
+            "Customer name": "={{$json.customerName}}",
+            "Email": "="
+          },
+          "matchingColumns": [
+            "Timestamp"
+          ],
+          "schema": [
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Customer name",
+              "displayName": "Customer name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Phone number",
+              "displayName": "Phone number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Current city",
+              "displayName": "Current city",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Destination City",
+              "displayName": "Destination City",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Move date",
+              "displayName": "Move date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Family size",
+              "displayName": "Family size",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Property type",
+              "displayName": "Property type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Budget",
+              "displayName": "Budget",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Prefered area",
+              "displayName": "Prefered area",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need packers?",
+              "displayName": "Need packers?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need electricity?",
+              "displayName": "Need electricity?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need internet?",
+              "displayName": "Need internet?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need gas?",
+              "displayName": "Need gas?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Additional Note",
+              "displayName": "Additional Note",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Destination city",
+              "displayName": "Destination city",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Preferred area",
+              "displayName": "Preferred area",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Additional notes",
+              "displayName": "Additional notes",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Case ID",
+              "displayName": "Case ID",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Created",
+              "displayName": "Created",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Created at",
+              "displayName": "Created at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1440,
+        -128
+      ],
+      "id": "9f341e3b-6fe9-401c-93b7-8a765177f9e7",
+      "name": "Update row in sheet1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Bfvk6izX4p60TVAW",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI",
+          "mode": "list",
+          "cachedResultName": "Customer",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 2065830161,
+          "mode": "list",
+          "cachedResultName": "Form Responses 1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1dN6AUBQvjlWAbCMXZj5j1iFcO5dwLXbPL9Z1Zu-tRGI/edit#gid=2065830161"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Timestamp": "={{$node[\"Google Sheets Trigger\"].json[\"Timestamp\"]}}",
+            "Customer name": "={{$json.customerName}}"
+          },
+          "matchingColumns": [
+            "Timestamp"
+          ],
+          "schema": [
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Customer name",
+              "displayName": "Customer name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Phone number",
+              "displayName": "Phone number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Current city",
+              "displayName": "Current city",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Destination City",
+              "displayName": "Destination City",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Move date",
+              "displayName": "Move date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Family size",
+              "displayName": "Family size",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Property type",
+              "displayName": "Property type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Budget",
+              "displayName": "Budget",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Prefered area",
+              "displayName": "Prefered area",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need packers?",
+              "displayName": "Need packers?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need electricity?",
+              "displayName": "Need electricity?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need internet?",
+              "displayName": "Need internet?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Need gas?",
+              "displayName": "Need gas?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Additional Note",
+              "displayName": "Additional Note",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Destination city",
+              "displayName": "Destination city",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Preferred area",
+              "displayName": "Preferred area",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Additional notes",
+              "displayName": "Additional notes",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Case ID",
+              "displayName": "Case ID",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Created",
+              "displayName": "Created",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Created at",
+              "displayName": "Created at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1456,
+        96
+      ],
+      "id": "fadde084-c03f-4f2e-8ea5-b4f52907cef7",
+      "name": "Update row in sheet2",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Bfvk6izX4p60TVAW",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{$json[\"Email\"]}}",
+        "subject": "QuickMove - Relocation Request Received",
+        "message": "=<h2>QuickMove Relocation Request Confirmation</h2>  <p>Hello <strong>{{$json[\"Customer name\"]}}</strong>,</p>  <p>Thank you for choosing <b>QuickMove</b>.</p>  <p>We have successfully received your relocation request.</p>  <table border=\"1\" cellpadding=\"6\" cellspacing=\"0\"> <tr> <td><b>Current City</b></td> <td>{{$json[\"Current city\"]}}</td> </tr>  <tr> <td><b>Destination</b></td> <td>{{$json[\"Destination City\"]}}</td> </tr>  <tr> <td><b>Move Date</b></td> <td>{{$json[\"Move date\"]}}</td> </tr>  <tr> <td><b>Priority</b></td> <td>{{$json[\"priority\"]}}</td> </tr>  <tr> <td><b>Next Action</b></td> <td>{{$json[\"nextAction\"]}}</td> </tr> </table>  <p>Our Operations Executive will contact you shortly.</p>  <p>Thank you,<br> QuickMove Team</p>",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        1648,
+        -128
+      ],
+      "id": "d0adb35c-f8d9-4344-80e2-5cd91834879a",
+      "name": "Send a message",
+      "webhookId": "700f5d6c-ef79-41fb-8918-f95b6814b965",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "b24XufA5n814hMkq",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Google Sheets Trigger": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update row in sheet": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript1": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Update row in sheet2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update row in sheet1": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "4d72ea31-273b-4217-b7be-b5af652f7cb3",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "27674aa5dc6926b9221555a0c4a8cafd9bf21d2e0e9e9a37c6a16d6ed7f5c82f"
+  },
+  "id": "qh4CG5F2CGQr0O1u",
+  "tags": []
+}
