@@ -1,0 +1,6 @@
+{
+  "model": "phi:latest",
+  "prompt": "You are an AI Operations Assistant for QuickMove.\n\nAnalyze this relocation request and return ONLY valid JSON with priority for the lead.\n\nCustomer Name: {{$json.customerName}}\nEmail: {{$json.email}}\nPhone: {{$json.phone}}\nCurrent City: {{$json.currentCity}}\nDestination City: {{$json.destinationCity}}\nMove Date: {{$json.moveDate}}\nProperty Type: {{$json.propertyType}}\nBudget: {{$json.budget}}\nPreferred Area: {{$json.preferredArea}}\nNeed Packers: {{$json.needPackers}}\nNeed Electricity: {{$json.needElectricity}}\nNeed Internet: {{$json.needInternet}}\nNeed Gas: {{$json.needGas}}\nAdditional Notes: {{$json.additionalNotes}}\n\nReturn JSON with:\ncustomerName, priority, services, missingInformation, nextAction, summary, confidence",
+  "stream": false,
+  "format": "json"
+}
